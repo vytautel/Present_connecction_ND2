@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Vartojimo paskola</title>
+		<meta http-equiv="Content-Type"  charset="UTF-8" > 
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   
+		<link rel="stylesheet" href="style.css">
+		<script src="func/functions.js" ></script>	 
+	</head>
+	
+	<body>
+		<input type = "hidden" value = "vartojimo" id = "loan_type"></input>
+		
+		<div class = "website">
+		<h2>Vartojimo paskola</h2>
+
+		<form id =  "form">
+			<label>Paskolos dydis (max <span class = "max_amount"></span> eur):</label><br>
+			<label id = "min_amount_warn">Suma turi būti didesnė už <span class = "min_amount"></span> eur.<br></label>
+			<label id = "max_amount_warn">Suma turi būti mažesnė už <span class = "max_amount"></span> eur.<br></label>
+			<input type = "number" style = "width: 260px;" id = "size" required >
+			<br>
+            <label>Grąžinimo terminas (max <span id = "max_years"></span> metai):</label><br>
+			<input type = "date" style = "width: 260px;" id = "calendar" required >	
+			<br>
+			<label>Kam imate paskolą?</label><br>
+            <select id = "type" required>
+                <option value = "automobilis">Automobiliui</option>
+                <option value = "buitine technika">Buitinei technikai</option>
+                <option value = "elektronika">Elektronikai</option>
+                <option value = "kita">Kita</option>
+            </select>
+		</form>
+
+		<label id = "interest_rate_label">Palūkanų norma: <span id = "interest_rate"></span>%</label>
+
+		<div id = "result_div">
+			<div id = "horizontal_line"></div>
+			<h3>Jūsų paskolos kriterijai</h3>
+
+			<label>Imate paskolą <span id = "days_count"></span> dienoms (
+				<span id = "months_count"></span> mėn.)</label><br>
+			<label id = "month_pay_label">Mėnesio įmoka: <span id = "month_payment"></span></label><br>
+			<label>Suma su palūkanomis: <span id = "total_payment"></span></label><br>
+			
+			<div id = "horizontal_line"></div>
+		</div>
+		</div>
+
+	</body>
+</html>
+

@@ -1,0 +1,89 @@
+.website{
+    max-width: 290px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    border: 1pt solid black;
+}
+
+#result_div{
+    padding-top: 30px;
+}
+
+input, select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#min_amount_warn, #max_amount_warn{
+    color: red;
+    font-size: 14px;
+}
+
+#interest_rate_label{
+  background-color: #c59c99;
+  padding: 10px;
+  color: rgb(58, 14, 14);
+  border: 2pt solid rgb(95, 64, 64);
+  border-radius: 8pt;
+}
+
+span {
+    color: #af1247;
+}
+
+#horizontal_line{
+    margin-top: 20px;
+    border-top: 2pt dotted rgb(71, 21, 21);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  display: none;
+  margin: 0; 
+}
+
+input[type=number],input[type=date] {
+    -moz-appearance:textfield;
+}
+
+select{
+      width: 260px;
+}
+
+.card{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card_text:after, .card_text:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+.card_text{
+    padding:0.01em 16px;
+    text-align:center;
+    background-color: rgb(185, 182, 183);
+}
